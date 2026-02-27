@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
 import { Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react'
 import { COMPANY } from '@/lib/constants'
+import { clientConfig } from '@/config/client.config'
 import { ContactForm } from '@/components/forms/contact-form'
 
 export const metadata: Metadata = {
   title: 'Contact',
-  description: `Contactez votre électricien certifié. Devis gratuit, intervention rapide. Tél: ${COMPANY.phone}. Paris et Île-de-France.`,
+  description: `Contactez votre électricien certifié. Devis gratuit, intervention rapide. Tél: ${COMPANY.phone}. ${clientConfig.VILLE} et ${clientConfig.ZONE_INTERVENTION}.`,
 }
 
 const contactInfo = [
@@ -103,7 +104,7 @@ export default function ContactPage() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Localisation ÉlectroPro"
+              title={`Localisation ${COMPANY.name}`}
             />
           </div>
         </div>

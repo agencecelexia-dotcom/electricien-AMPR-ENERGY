@@ -15,6 +15,7 @@ import {
   Menu,
   X,
 } from 'lucide-react'
+import { COMPANY } from '@/lib/constants'
 
 const navItems = [
   { href: '/admin/dashboard', label: 'Tableau de bord', icon: LayoutDashboard },
@@ -76,7 +77,7 @@ export function AdminSidebar() {
             <Zap className="w-5 h-5 text-white" />
           </div>
           <div>
-            <span className="text-white font-bold text-lg">ÉlectroPro</span>
+            <span className="text-white font-bold text-lg">{COMPANY.name}</span>
             <span className="block text-slate-400 text-xs">Administration</span>
           </div>
         </Link>

@@ -1,12 +1,13 @@
 import type { Metadata } from 'next'
 import { Star, Shield, Clock, CheckCircle } from 'lucide-react'
 import { COMPANY, TESTIMONIALS } from '@/lib/constants'
+import { clientConfig } from '@/config/client.config'
 import { QuoteForm } from '@/components/forms/quote-form'
 import { Badge } from '@/components/ui/badge'
 
 export const metadata: Metadata = {
   title: 'Devis Gratuit Électricien',
-  description: `Demandez votre devis gratuit en ligne. Réponse sous 24h, sans engagement. Électricien certifié Qualifelec à Paris.`,
+  description: `Demandez votre devis gratuit en ligne. Réponse sous 24h, sans engagement. Électricien certifié Qualifelec à ${clientConfig.VILLE}.`,
 }
 
 export default function DevisPage() {

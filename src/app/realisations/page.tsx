@@ -1,12 +1,13 @@
 import type { Metadata } from 'next'
-import { REALISATIONS } from '@/lib/constants'
+import { REALISATIONS, COMPANY } from '@/lib/constants'
+import { clientConfig } from '@/config/client.config'
 import { BeforeAfterSlider } from '@/components/ui/before-after-slider'
 import { Badge } from '@/components/ui/badge'
 import { FinalCTA } from '@/components/sections/final-cta'
 
 export const metadata: Metadata = {
   title: 'Nos Réalisations',
-  description: 'Découvrez nos projets d\'installation et rénovation électrique avant/après. +2500 projets réalisés à Paris et Île-de-France.',
+  description: `Découvrez nos projets d'installation et rénovation électrique avant/après. +${clientConfig.NOMBRE_INTERVENTIONS} projets réalisés à ${clientConfig.VILLE} et ${clientConfig.ZONE_INTERVENTION}.`,
 }
 
 export default function RealisationsPage() {

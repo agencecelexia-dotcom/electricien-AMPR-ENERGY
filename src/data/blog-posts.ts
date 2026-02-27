@@ -1,3 +1,6 @@
+import { COMPANY } from '@/lib/constants'
+import { clientConfig } from '@/config/client.config'
+
 export type ContentBlock =
   | { type: 'paragraph'; text: string }
   | { type: 'heading'; text: string }
@@ -64,7 +67,7 @@ export const blogPosts: BlogPost[] = [
       {
         type: 'quote',
         text: 'Une installation électrique aux normes, c\'est la tranquillité pour les 30 prochaines années. C\'est un investissement, pas une dépense.',
-        author: 'Marc Durand, ÉlectroPro',
+        author: `${clientConfig.FONDATEUR}, ${COMPANY.name}`,
       },
     ],
   },
@@ -111,7 +114,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Seul un professionnel certifié peut réaliser un diagnostic complet. Il vérifie point par point les circuits, les protections, la terre, et l\'état du câblage. En cas de non-conformité, il établit un rapport avec les travaux à réaliser. Chez ÉlectroPro, nous proposons ce diagnostic gratuitement dans le cadre d\'un devis de mise aux normes.',
+        text: `Seul un professionnel certifié peut réaliser un diagnostic complet. Il vérifie point par point les circuits, les protections, la terre, et l\'état du câblage. En cas de non-conformité, il établit un rapport avec les travaux à réaliser. Chez ${COMPANY.name}, nous proposons ce diagnostic gratuitement dans le cadre d\'un devis de mise aux normes.`,
       },
       {
         type: 'quote',
@@ -167,7 +170,7 @@ export const blogPosts: BlogPost[] = [
       {
         type: 'quote',
         text: 'Une maison bien domotisée consomme 15 à 25% d\'énergie en moins. Le confort en plus, les factures en moins.',
-        author: 'Marc Durand, ÉlectroPro',
+        author: `${clientConfig.FONDATEUR}, ${COMPANY.name}`,
       },
       {
         type: 'heading',

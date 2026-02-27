@@ -77,7 +77,7 @@ export function QuoteForm({ compact = false }: { compact?: boolean }) {
           label="Téléphone *"
           id="quote-phone"
           type="tel"
-          placeholder="01 23 45 67 89"
+          placeholder="06 XX XX XX XX"
           error={errors.phone?.message || (state && !state.success ? state.errors?.phone?.[0] : undefined)}
           {...register('phone')}
         />

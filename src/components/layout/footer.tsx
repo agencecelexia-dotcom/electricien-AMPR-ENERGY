@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Zap, Phone, Mail, MapPin, ArrowRight } from 'lucide-react'
 import { COMPANY, NAV_ITEMS, SERVICES } from '@/lib/constants'
+import { clientConfig } from '@/config/client.config'
 import { Button } from '@/components/ui/button'
 
 export function Footer() {
@@ -103,7 +104,7 @@ export function Footer() {
         <div className="mt-12 border-t border-white/10 pt-8 space-y-4">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <p className="text-xs text-slate-500">
-              &copy; {new Date().getFullYear()} {COMPANY.name} &mdash; SIRET 123 456 789 00012
+              &copy; {new Date().getFullYear()} {COMPANY.name} &mdash; SIRET {clientConfig.SIRET}
             </p>
             <div className="flex gap-6 text-xs text-slate-500">
               <Link href="/mentions-legales" className="transition-colors duration-200 hover:text-slate-300 cursor-pointer">

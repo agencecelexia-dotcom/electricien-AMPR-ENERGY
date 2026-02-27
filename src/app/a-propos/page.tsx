@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import { Shield, Heart, Zap, Users } from 'lucide-react'
 import { COMPANY, TEAM_MEMBERS } from '@/lib/constants'
+import { clientConfig } from '@/config/client.config'
 import { Badge } from '@/components/ui/badge'
 import { TrustBar } from '@/components/sections/trust-bar'
 import { FinalCTA } from '@/components/sections/final-cta'
@@ -26,7 +27,7 @@ export default function AboutPage() {
         <div className="absolute inset-0">
           <Image
             src="/images/team/equipe-groupe.webp"
-            alt="L'équipe ÉlectroPro"
+            alt={`L'équipe ${COMPANY.name}`}
             fill
             className="object-cover opacity-20"
             sizes="100vw"
@@ -52,9 +53,9 @@ export default function AboutPage() {
               <h2 className="mb-6 font-heading text-4xl font-bold text-slate-900">Notre histoire</h2>
               <div className="space-y-4 text-slate-600 leading-relaxed">
                 <p>
-                  Fondée il y a {COMPANY.yearsExperience} ans par Marc Durand, maître électricien passionné,
+                  Fondée il y a {COMPANY.yearsExperience} ans par {clientConfig.FONDATEUR}, maître électricien passionné,
                   {COMPANY.name} est née d&apos;une vision simple : offrir des services électriques
-                  d&apos;excellence à Paris et en Île-de-France.
+                  d&apos;excellence à {clientConfig.VILLE} et en {clientConfig.ZONE_INTERVENTION}.
                 </p>
                 <p>
                   Au fil des années, nous avons constitué une équipe de techniciens certifiés,
@@ -100,7 +101,7 @@ export default function AboutPage() {
               <div className="relative h-64 overflow-hidden rounded-2xl bg-slate-100">
                 <Image
                   src="/images/team/equipe-groupe.webp"
-                  alt="L'équipe ÉlectroPro"
+                  alt={`L'équipe ${COMPANY.name}`}
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"

@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { ArrowRight, Check, ArrowLeft } from 'lucide-react'
 import { SERVICES, COMPANY } from '@/lib/constants'
+import { clientConfig } from '@/config/client.config'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { FinalCTA } from '@/components/sections/final-cta'
@@ -49,9 +50,9 @@ export default async function ServiceDetailPage({ params }: Props) {
     provider: {
       '@type': 'Electrician',
       name: COMPANY.name,
-      telephone: '+33123456789',
+      telephone: clientConfig.TELEPHONE_HREF,
     },
-    areaServed: 'Paris, Île-de-France',
+    areaServed: `${clientConfig.VILLE}, ${clientConfig.ZONE_INTERVENTION}`,
     image: service.image,
   }
 

@@ -253,7 +253,7 @@ export function TemoignagesTab() {
                   type="text"
                   value={formData.ville}
                   onChange={(e) => setFormData({ ...formData, ville: e.target.value })}
-                  placeholder="Ex: Paris 11e"
+                  placeholder="Ex: Nice"
                   className="w-full px-4 py-2.5 border border-slate-300 rounded-lg text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm"
                 />
               </div>

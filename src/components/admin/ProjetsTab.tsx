@@ -308,7 +308,7 @@ export function ProjetsTab() {
                     type="text"
                     value={formData.titre}
                     onChange={(e) => handleTitreChange(e.target.value)}
-                    placeholder="Ex: Rénovation Appartement Paris"
+                    placeholder="Ex: Rénovation Électrique"
                     className="w-full px-4 py-2.5 border border-slate-300 rounded-lg text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm"
                   />
                 </div>
@@ -321,7 +321,7 @@ export function ProjetsTab() {
                     type="text"
                     value={formData.slug}
                     onChange={(e) => setFormData({ ...formData, slug: e.target.value })}
-                    placeholder="renovation-appartement-paris"
+                    placeholder="renovation-electrique"
                     className="w-full px-4 py-2.5 border border-slate-300 rounded-lg text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm"
                   />
                 </div>
