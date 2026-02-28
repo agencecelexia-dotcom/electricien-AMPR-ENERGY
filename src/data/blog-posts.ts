@@ -281,7 +281,7 @@ export const blogPosts: BlogPost[] = [
       {
         type: 'quote',
         text: 'L\'éclairage représente 10 à 15% de la facture d\'électricité d\'un ménage. Passer en full LED, c\'est diviser ce poste par quatre.',
-        author: 'Marc Durand, ÉlectroPro',
+        author: `${clientConfig.FONDATEUR}, ${COMPANY.name}`,
       },
       {
         type: 'heading',
@@ -349,7 +349,7 @@ export const blogPosts: BlogPost[] = [
       {
         type: 'quote',
         text: 'Le solaire est un investissement rentable sur 8 à 12 ans en moyenne. Après, c\'est de l\'électricité gratuite pendant 15 à 20 ans.',
-        author: 'Marc Durand, ÉlectroPro',
+        author: `${clientConfig.FONDATEUR}, ${COMPANY.name}`,
       },
     ],
   },

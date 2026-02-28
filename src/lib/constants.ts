@@ -368,9 +368,9 @@ export const REALISATIONS = [
 
 export const TEAM_MEMBERS = [
   {
-    name: 'Marc Durand',
+    name: clientConfig.FONDATEUR,
     role: 'Fondateur & Maître Électricien',
-    description: '15 ans d\'expérience dans l\'électricité résidentielle et commerciale. Certifié Qualifelec et formateur.',
+    description: `${clientConfig.ANNEES_EXPERIENCE} ans d'expérience dans l'électricité résidentielle et commerciale. Certifié Qualifelec et formateur.`,
     image: '/images/team/equipe-fondateur.webp',
   },
 ]
