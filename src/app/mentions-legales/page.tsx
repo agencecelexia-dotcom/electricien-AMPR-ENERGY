@@ -164,7 +164,7 @@ export default function MentionsLegalesPage() {
             Mentions <span className="text-electric">Légales</span>
           </h1>
           <p className="mx-auto max-w-2xl text-slate-600">
-            Informations légales relatives au site electropro.fr
+            Informations légales relatives au site {clientConfig.DOMAINE.replace('https://', '')}
           </p>
         </div>
       </section>

@@ -8,7 +8,7 @@ interface GoogleMapProps {
   className?: string
 }
 
-export function GoogleMap({ address = clientConfig.ADRESSE || '15 Rue Voltaire, 75011 Paris', className }: GoogleMapProps) {
+export function GoogleMap({ address = clientConfig.ADRESSE, className }: GoogleMapProps) {
   const encodedAddress = encodeURIComponent(address)
 
   return (
